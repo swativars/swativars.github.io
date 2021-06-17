@@ -1,0 +1,504 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/509c72249f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader until page loads-->
+    <div id="loader" class="center"></div>
+    <!-- Header Start -->
+    <header>
+        <!--Brand Start-->
+        <div class="logoContainer py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center">
+                            <div class="brandLogo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" alt="logo" />
+                                </a>
+                            </div>
+                            <div class="ml-1 brandLogoText">
+                                <p class="mb-0">Neeraj Varshney & Associates</p>
+                                <p class="mb-0">Chartered Accountants</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end align-items-center">
+                        <div class="headerLinks">
+                            <a class="mb-0" href="mailto:caneerajvarshney@gmail.com"><i
+                                    class="fas fa-envelope mr-1"></i>
+                                caneerajvarshney@gmail.com</a>
+                            <!-- <p class="mb-0"><i class="fas fa-envelope"></i> capankajvarshney@gmail.com</p> -->
+                            <a class="mb-0" href="tel:9899166417"><i class="fas fa-phone-alt mr-1"></i>
+                                +91-9899166417</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end align-items-center">
+                        <div class="social-links">
+                            <a href="#!" class="mr-2 mr-md-3 facebook-logo"><img src="assets/icons/Facebook.svg"
+                                    alt="facebook icon"></a>
+                            <a href="#!" class="mr-2 mr-md-3 twitter-logo"><img src="assets/icons/Twitter.svg"
+                                    alt="twitter icon"></a>
+                            <a href="#!" class="mr-2 mr-md-3 insta-logo"><img src="assets/icons/Instagram.svg"
+                                    alt="instagram icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Brand End-->
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-md navbar-dark navHeader">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav w-100 justify-content-md-center">
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="index.html"><span class="nav-white">Home</span></a>
+                    </li>
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="#"><span class="hover-white">About Us</span></a>
+                    </li>
+                    <li class="nav-item dropdown navLI">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <span class="hover-white">Knowledge Base</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="services.html"><span class="hover-white">Services</span></a>
+                    </li>
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="#"><span class="hover-white">Photo Gallary</span></a>
+                    </li>
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="team.html"><span class="hover-white">Team</span></a>
+                    </li>
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="career.html"><span class="hover-white">Career</span></a>
+                    </li>
+                    <li class="nav-item navLI">
+                        <a class="nav-link linkLight" href="contact.html"><span class="hover-white">Contact
+                                Us</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar End-->
+        <!-- Carousel Start -->
+        <!-- <div id="indexCarousel" class="carousel slide" data-ride="carousel">
+
+            
+            <ul class="carousel-indicators">
+                <li data-target="#indexCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#indexCarousel" data-slide-to="1"></li>
+                <li data-target="#indexCarousel" data-slide-to="2"></li>
+                <li data-target="#indexCarousel" data-slide-to="3"></li>
+            </ul>
+
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/caImg3.jpg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/caImg4.jpg" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/caImg5.jpg" alt="New York">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/caImg6.jpg" alt="New York">
+                </div>
+            </div>
+
+            
+            <a class="carousel-control-prev" href="#indexCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#indexCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div> -->
+        <!-- Carousel End-->
+        <!-- <div class="index-header">
+            <img src="assets/images/caImg4.jpg" alt="Chicago">
+        </div> -->
+        <div class="index-banner">
+            <div class="index-banner-block">
+                <div class="index-content-block">
+                    <div class="superheadline_outside"><span class="superheadline">CONNECTING CUSTOMERS TO YOUR
+                            BRAND</span></div>
+                    <h1 class="index-banner-title">Building Brands<br><span>With Great Passion</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!--Latest News Begin-->
+    <div class="container mt-4">
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="w-100">
+                    <img height="560"
+                        src="http://avantage.bold-themes.com/marketing/wp-content/uploads/sites/4/2019/04/img-people.jpg"
+                        class="attachment-large size-large w-100"
+                        alt="http://avantage.bold-themes.com/marketing/wp-content/uploads/sites/4/2019/04/img-people.jpg"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="hm-services-sec">
+                    <div class="hm-services-title">
+                        <h2>About<span> Us</span></h2>
+                    </div>
+                    <div>
+                        <p><b>Neeraj Varshney & Associates</b> was formed in
+                            2012 as a Chartered Accountancy firm. The
+                            said concern is a Proprietor concern based
+                            out of Noida having its office at Noida
+                            Our strategic policy is concentric operations
+                            and accordingly we render specialized and
+                            innovative professional services with speed,
+                            accuracy and reliability. It is speed that
+                            derives from sizeable infrastructural support
+                            and an extensive base of associates, accuracy
+                            that result from an understanding of the
+                            science and reliability that only commitment
+                            can bestow.</p>
+                        <p>
+                            Today our world is being brought together
+                            not simply by the mandate of nations, but by
+                            the power of individuals who allow
+                            themselves to hope for a better life. Nothing
+                            holds greater possibility than a world with
+                            hope for its own future. Although the road
+                            may not be easy or quick we think we can
+                            help our clients achieve even greater success.
+                            Our mission is to serve our clients with
+                            creativity, which is brought about by out of
+                            the box thinking, enthusiasm, which stems
+                            from the blend of young, experience and
+                            dynamic team members, diligence assured by
+                            cumulative years of firms experience and
+                            vision which is captured by pre-empting
+                            client needs. This principle is at the heart of
+                            our work. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4 offset-1">
+                <div class="hm-services-sec">
+                    <div class="hm-services-title">
+                        <h2>Latest<span> News</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mx-auto">
+                            <div class="newsContainer">
+                                <article class="icon-box text-left">
+                                    <div class="px-4 newsAnimation">
+                                        <p class="my-1">13-04-2020</p>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</a>
+                                        </li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem
+                                                Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum</a></li>
+                                        <p class="my-1">12-04-2020</p>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem
+                                                Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum</a></li>
+                                        <p class="my-1">11-04-2020</p>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum</a></li>
+                                        <p class="my-1">10-04-2020</p>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</a>
+                                        </li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum
+                                                Lorem Ipsum Lorem Ipsum Lorem Ipsum</a></li>
+                                        <p class="my-1">9-04-2020</p>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</a>
+                                        </li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</a></li>
+                                        <p class="my-1">8-04-2020</p>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</a>
+                                        </li>
+                                        <li><a href="#">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                Lorem
+                                                Ipsum</a></li>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!--Latest News End-->
+    <!--Service Offering Begin-->
+    <div class="container mt-5">
+        <div class="hm-services-sec">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="hm-services-title">
+                    <h2><span>Services</span><br />We're offering</span></h2>
+                </div>
+                <div>
+                    <a href="services.html" class="allButton btn">View all services</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="height-fill">
+                        <div class="height-fill-side">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <article class="icon-box">
+                            <div class="box-top">
+                                <div class="box-header">
+                                    <h5>Legal &<br />
+                                        Secretarial
+                                    </h5>
+                                </div>
+                            </div>
+                            <!-- <div class="box-body">
+                                <p class="text-gray-05">Considering registering company in India and that too in a fast
+                                    and
+                                    hassle-free</p>
+                            </div> -->
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="height-fill">
+                        <div class="height-fill-side">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <article class="icon-box">
+                            <div class="box-top">
+                                <div class="box-header">
+                                    <h5>Finance & <br />Accounting</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="box-body">
+                                <p class="text-gray-05">In the era of globalization entrepreneurship is the need of the
+                                </p>
+                            </div> -->
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="height-fill">
+                        <div class="height-fill-side">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                        <article class="icon-box">
+                            <div class="box-top">
+                                <div class="box-header">
+                                    <h5>Payroll<br /> Processing</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="box-body">
+                                <p class="text-gray-05">GST is a huge tax reform in India post-Independence</p>
+                            </div> -->
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="height-fill">
+                        <div class="height-fill-side">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <article class="icon-box">
+                            <div class="box-top">
+                                <div class="box-header">
+                                    <h5>Management<br /> Services</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="box-body">
+                                <p class="text-gray-05">A trademark is typically a name, word, phrase, logo, symbol,
+                                    design,
+                                    image</p>
+                            </div> -->
+                        </article>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="height-fill">
+                        <div class="height-fill-side">
+                            <i class="fas fa-stamp"></i>
+                        </div>
+                        <article class="icon-box">
+                            <div class="box-top">
+                                <div class="box-header">
+                                    <h5><a href="#">PAN India Compliance Administration</a></h5>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <p class="text-gray-05">We understand that for a startup, the primary focus is to grow
+                                    their
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-6">
+                    <div class="height-fill">
+                        <div class="height-fill-side">
+                            <i class="fas fa-stamp"></i>
+                        </div>
+                        <article class="icon-box">
+                            <div class="box-top">
+                                <div class="box-header">
+                                    <h5><a href="#">Foreign Direct Investment</a></h5>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <p class="text-gray-05">We understand that for a startup, the primary focus is to grow
+                                    their
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!--Service Offering Modals Start-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Finance and Accounts Outsourcing</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <ul>
+                        <li>Accounting System Design & Implementation</li>
+                        <li>Financial Accounting</li>
+                        <li>Budgeting</li>
+                        <li>Financial Reporting</li>
+                        <li>MIS Reports</li>
+                        <li>Financial Analysis</li>
+                        <li>Asset Accounting Management</li>
+                        <li>Depreciation and Amortization Schedules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Service Offering Modals End-->
+    <!-- Service Offering End-->
+    <!--footer Start-->
+    <footer>
+
+        <div class="footer_wrapper mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerBox">
+                            <h3 class="footer_heading">Quick Links</h3>
+                            <ul class="links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footerBox">
+                            <h3 class="footer_heading">Useful Links</h3>
+                            <ul class="links">
+                                <li><a href="#">Pan</a></li>
+                                <li><a href="#">Tan</a></li>
+                                <li><a href="#">E-Filing</a></li>
+                                <li><a href="#">Online Payment</a></li>
+                                <li><a href="#">Challans</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="footerBox">
+                            <h3 class="footer_heading">Contact Us</h3>
+                            <p class="mb-0">Neeraj Varshney & Associates</p>
+                            <p class="mb-0">Chartered Accountants</p>
+                            <p class="mb-0">IInd Floor, Above Muthoot Finance</p>
+                            <p class="mb-0">Opposite Govt Rajkiya Inter College</p>
+                            <p class="mb-0">Sector-22, Noida-201301, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy mt-4">
+                <p class="m-help" style="text-transform: lowercase !important; text-align: center"><i
+                        style="margin-right: 5px" class="fa fa-envelope-o"></i><a
+                        href="mailto:caneerajvarshney@gmail.com">caneerajvarshney@gmail.com</a>
+                </p>
+                <p>&copy; Neeraj Varshney & Associates</p>
+            </div>
+        </div>
+    </footer>
+    <!--footer End-->
+    <!--Latest News End-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>
