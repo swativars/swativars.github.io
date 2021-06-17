@@ -1,0 +1,203 @@
+/*--- || Loading Circle --- */
+#loader { 
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #004D84; 
+    width: 70px; 
+    height: 70px; 
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0% {
+        border-top-color: #004D84;
+       
+    }
+    50%{
+        border-top-color: #014;
+        
+    }
+    100% {
+        border-top-color: #004D84;
+        transform: rotate(360deg);
+    }
+}
+.center { 
+    position: fixed; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
+/*---------*/
+.navHeader{
+    background-color: #004D84;
+    
+}
+.navHeader .linkLight{
+    color: #fff;
+}
+.navHeader .linkLight:hover{
+    color: #fff;
+}
+.nav-white{
+    position: relative;
+    color: #fff;
+}
+.hover-white{
+    position: relative;
+}
+.nav-white:after{
+    content: ""; 
+    position: absolute;
+    width: 50%; 
+    border-bottom: 3px solid #fff;
+    bottom:-4px;
+    left: 0;
+    right: 0;
+}
+.hover-white::after{
+    content: ""; 
+    position: absolute;
+    width: 0%; 
+    border-bottom: 3px solid #fff;
+    bottom:-4px;
+    left: 0;
+    right: 0; 
+    transition: width 300ms linear;
+}
+.hover-white:hover::after{
+    width: 50%
+}
+#indexCarousel img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.navLI{
+    padding:0 12px;
+}
+.brandLogo{
+    width: 90px;
+}
+.brandLogo img{
+    width: 100%;
+}
+.brandLogoText p:first-child{
+    font-family: 'Merriweather';
+    color:#004D84;
+    font-size: 20px;
+}
+.headerLinks a{
+  color:rgba(102,102,102,0.85);
+  border-right: 2px solid #ccc;
+  padding:0 10px;
+  font-family: 'Lato', sans-serif;
+
+}
+.headerLinks a:hover{
+    color:#000;
+    text-decoration: none;
+  
+  }
+.brandLogoText p:last-child{
+    font-family: 'Merriweather'; 
+    font-style: italic;
+}
+.logoContainer{
+    background-color: #f6f6f6;
+    border-top:3px solid rgba(102,102,102,0.85);
+}
+/*-----|| Carousel indicators ----- */
+.carousel-indicators .active {
+    width: 35px!important;
+    height: 12px!important;
+    border-radius: 50px!important;
+}
+.carousel-indicators li {
+    width: 12px!important;
+    height: 12px!important;
+    border: 2px solid #f6f6f6 ;
+    background-color: #fff !important;
+    border-radius: 50%!important;
+    cursor: pointer;
+    box-shadow:1px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.carousel-indicators{
+    align-items: center;
+}
+.carousel-indicators li:first-child{
+    margin-right: 1%;
+}
+/*-------------*/
+.footer_wrapper{
+    background-color: #004D84;
+    padding-top:25px;
+}
+.footerBox {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    color: #fff;
+}
+.footerBox h3 {
+    margin: 0 0 10px 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0px 7px;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+}
+.footerBox h3::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    left: 1px;
+    bottom: 0;
+    background: #ca970b;
+}
+.footerBox ul.links {
+    padding: 0px 0px 10px 10px;
+}
+.footerBox ul.links li {
+    margin: 0 0 10px 0px;
+    list-style: none;
+}
+.footerBox ul.links li a {
+    color: #fff;
+    font-weight: 400;
+    padding: 2px 0px;
+    position: relative;
+    transition: 0.5s ease;
+    font-size: 1rem;
+}
+.footerBox ul.links li a:hover{
+    color: #fff;
+    text-decoration: none !important;
+}
+.footer_wrapper a, .footer_wrapper h6 , .footer_wrapper p{
+    color: #fff;
+}
+.footer_wrapper ul li{
+    list-style: none;
+}
+.footer_wrapper .copy {
+    width: auto;
+    padding: 20px 0px;
+    background: #f1f1f1;
+}
+.footer_wrapper .footer_heading{
+    font-size:20px;
+    font-family: "Jost", sans-serif;
+}
+.footer_wrapper .copy p,.footer_wrapper .copy a {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+    margin: 0px;
+
+}
