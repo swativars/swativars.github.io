@@ -55,6 +55,7 @@
 .icon-box h5 a{color: #004D84;}
 .text-gray-05 {color: rgba(0,0,0,.5); margin:0;}
 .height-fill{width:80%;margin:15px auto;height:100px}
+.height-fill-team{margin:15px auto; background-color: #fff ; position: relative;}
 .height-fill .height-fill-side {
     display: block;
     content: "";
@@ -192,11 +193,102 @@
     flex-grow: 0;
     flex-shrink: 0;
 }
-
+.review {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url(../images/caImg7.jpg) , linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85));
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    width: 100%;
+  height: auto;
+  background-size: cover;
+}
+.carousel-item {
+    text-align: center;
+}
+.banner-main2 .carousel-caption {
+    position: inherit;
+}
+.banner-main2 .carousel-caption span {
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    display: block;
+}
+.banner-main2 .carousel-caption p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+.banner-main2 .carousel-caption a {
+    font-size: 17px;
+    transition: ease-in all 0.5s;
+    /* background-color: #fff;
+    color: #000; */
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+    width: 65px;
+    height: 65px;
+    background: #004D84;
+    opacity: 1;
+    font-size: 30px;
+    color: #FFF;
+    border-radius: 41px;
+}
+#main_slider a.carousel-control-next {
+    position: absolute;
+    top: 36%;
+    margin-right: -8%;
+}
+#main_slider a.carousel-control-prev {
+    position: absolute;
+    top: 36%;
+    margin-left: -8%;
+}
 /* Services css start */
 .serviceTitle{
     color: #004D84
 }
+.serviceCard{
+    /* margin:20px auto; */
+    /* padding: 30px; */
+    /* box-shadow: 0px 0px 15px rgb(0 0 0 / 10%); */
+    background-color: #fff!important;
+    border: 0 !important;
+    /* border-radius: 25px 0!important; */
+}
+.serviceCard i{
+    position: absolute;
+    right:20px;
+    top:50%;
+    transform:translate(-50%,0);
+    transition: all 1s linear;
+    color:#004d84;
+}
+.serviceCard:hover i{
+  right:10px;
+  color:#000
+}
+.serviceCard .card-header{
+    background-color: #fff!important;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,2.125)!important;
+    border-radius:25px 0!important;
+}
+
 /* services css end */
 /* Contact us css start */
 .contactHeader{
@@ -208,9 +300,10 @@
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
-    padding-left: 20px;
-    padding-right: 20px;
-    vertical-align: top;
+    padding: 20px;
+    border: 0.5px solid rgba(0,0,0,0.06);
+    vertical-align: center;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
 }
 .column-inner .column-inner-content{
     width: 100%;
@@ -261,6 +354,7 @@ position: relative;
 }
 /* Contact us css end */
 
+
 @keyframes scrollEffect{
     0% {
         top:0px
@@ -272,4 +366,10 @@ position: relative;
 }
 .newsAnimation:hover {
     animation:0;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+#main_slider a.carousel-control-next, #main_slider a.carousel-control-prev {
+    display: none;
+}
 }

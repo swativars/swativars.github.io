@@ -3,10 +3,12 @@
   height: 500px;
 }
 .team-member-image{
-    width: 100%;
+    width: 160px;
+    height:160px;
 }
 .team-member-image img{
-  width:100%
+  width:100%;
+  border-radius:50%;
 }
 .team-banner{
   display: flex;
@@ -71,3 +73,45 @@ object-fit: cover;
 .teamCard .card-body::-webkit-scrollbar-thumb{background-color: #888;}
 /* Handle on hover */
 .teamCard .card-body::-webkit-scrollbar-thumb:hover{background-color: #555;}
+
+.teamBlock{
+  position:absolute;width:40px;height:40px;background-color: #fff;border-radius: 50%;bottom: 15px;right:0px;cursor: pointer;
+}
+.teamBlock i{
+  color: #004D84;
+  cursor: pointer;
+}
+.team-icon-box:hover .teamBlock{
+  background-color: #004D84;
+  }
+.team-icon-box:hover .teamBlock i{
+color:#fff;
+}
+.teamClose{
+  border-radius: 50%;
+    background-color: #004D84!important;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff!important;
+    position: relative;
+    top: -10px;
+    z-index: 999999;
+    opacity: 1!important;
+    right: -10px;
+    font-weight: normal!important;
+    font-size: 16px!important;
+}
+.teamBody{
+  position: relative;
+}
+.teamBody p:after{
+  content: "\201c";
+  position:absolute;
+  left: -10px;
+  top:-40px;
+  font-size: 85px;
+  color: #004D84;
+}
