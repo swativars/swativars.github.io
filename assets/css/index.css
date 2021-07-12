@@ -44,7 +44,7 @@
 .hm-services-sec h2{font-size:35px; position:relative; color:#050521; font-weight: 700; margin-top:0; margin-bottom:10px;}
 .hm-services-sec h2 span{color: #004D84; font-weight:700;}
 .hm-services-sec h2:after {content: ''; display: block; width:80px; height:3px; background:#ca970b; left:0;margin: 4px auto 0;position:absolute; top:100%;}
-.hm-services-sec .icon-box{padding:30px 25px 20px;position: relative; text-align:center; margin-bottom:30px;height:100%}
+.hm-services-sec .icon-box{padding:30px 20px;position: relative; text-align:center; margin-bottom:30px;height:100%}
 .icon-box:before, .icon-box:after {content: ''; position: absolute; width: calc(100% - 35px); height: calc(100% - 35px); border: 1px solid #ccc; pointer-events: none;   transition: .33s all ease;}
 .icon-box:before {top: 0; left: 0; border-width: 1px 0 0 1px;}
 .icon-box:after {bottom: 0; right: 0; border-width: 0 1px 1px 0;}
@@ -295,6 +295,16 @@
     padding: 10px 0;
     border-bottom: 1px solid #f6f6f6
 }
+.contactHeader p a{
+    color: #004D84;
+    text-decoration: none;
+    border-bottom: 1px solid #004d84;
+}
+.contactHeader p a:hover{
+    color: #000;
+    text-decoration: none;
+    border-bottom:none;
+}
 .column-inner{
     display: flex;
     -webkit-flex-flow: column nowrap;
@@ -304,17 +314,20 @@
     border: 0.5px solid rgba(0,0,0,0.06);
     vertical-align: center;
     box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+    height:190px;
 }
 .column-inner .column-inner-content{
     width: 100%;
+    height: 100%;
 }
 .column-inner .column-inner-content .column-service{
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: center;
+    align-content: center;
     max-width: 100%;
+    height: 100%;
 }
 .column-icon-holder{
     box-shadow: 0 0 0 1em #004D84 inset;
@@ -329,6 +342,18 @@ position: relative;
     flex: 1 0 auto;
     display: block;
     text-align: center;
+    margin-left:12px;
+}
+.contactForm{
+    border-radius: 50px!important;
+    padding: 1.25em!important;
+    height: 3.25em!important;
+    border: 1px solid rgba(24,24,24,.2)!important;
+}
+.contactForm-textarea{
+    border-radius: 26px!important;
+    padding: 1.25em!important;
+    border: 1px solid rgba(24,24,24,.2)!important;
 }
 .column-icon-holder i{
     color:#fff;
@@ -339,7 +364,7 @@ position: relative;
     transform: translate(-50%,-50%) skewX(8deg);
 }
 .column-service-content{
-    padding: 0 0 0 1em;
+    padding: 0 0 0 1.5em;
     order: 2;
     text-align: left;
     flex: 1 1 auto;
@@ -352,8 +377,89 @@ position: relative;
 .service-content-text{
     padding-top: .7rem;
 }
-/* Contact us css end */
+.service-content-text-links a{
+    color: #6d6c6c;
+    text-decoration: none;
+}
+.service-content-text-links a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.map-responsive{
+overflow:hidden;
+/* padding-bottom:35%; */
+position:relative;
+height:100%;
+/* transform: rotate(-4deg); */
+border-radius:50px;
+/* border-bottom:5px solid #004d84;
+border-right: 5px solid #004d84; */
+}
 
+.map-responsive iframe{
+
+    left:0;
+   top:0;
+   height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+.social-links-contact{
+    
+        background: #252525;
+        padding: 30px 0; 
+    
+}
+.follow {
+    text-align: center;
+}
+.follow ul li {
+    display: inline-block;
+    margin: 0 4px;
+}
+.follow h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+.follow ul li a {
+    color: #252525;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+}
+.contactBlockContainer{
+    background-color: #252525;
+}
+.contactBlock{
+    padding:25px 15px;
+    border-radius: 0 0 80px 0;
+    background: #fff;
+}
+/* Contact us css end */
+blockquote:before {
+    content: '\e900';
+    font-family: Avantage;
+    display: block;
+    font-size: 6em;
+    line-height: 1;
+    position: absolute;
+    top: -.15em;
+    left: 0;
+    opacity: .1;
+    color: currentColor;
+}
 
 @keyframes scrollEffect{
     0% {
