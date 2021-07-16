@@ -78,7 +78,7 @@
     padding:0 12px;
 }
 .brandLogo{
-    width: 90px;
+    width: 70px;
 }
 .brandLogo img{
     width: 100%;
@@ -86,14 +86,15 @@
 .brandLogoText p:first-child{
     font-family: 'Merriweather';
     color:#004D84;
-    font-size: 20px;
+    font-size: 18px;
 }
 .headerLinks a{
-  color:rgba(102,102,102,0.85);
+    font-family: 'Lato', sans-serif;
+    color:rgba(102,102,102,0.85);
+    padding:0 10px;
+}
+.headerLinks a:first-child{
   border-right: 2px solid #ccc;
-  padding:0 10px;
-  font-family: 'Lato', sans-serif;
-
 }
 .headerLinks a:hover{
     color:#000;
@@ -103,6 +104,7 @@
 .brandLogoText p:last-child{
     font-family: 'Merriweather'; 
     font-style: italic;
+    font-size: 14px;
 }
 .logoContainer{
     background-color: #f6f6f6;
