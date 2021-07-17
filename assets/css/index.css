@@ -42,17 +42,17 @@
 .hm-services-title{ margin-bottom:40px}
 .hm-services-title p{font-size:16px; margin:0;}
 .mid-text-box-inner  .hm-services-sec h2:before{background:none;}
-.hm-services-sec h2{font-size:35px; position:relative; color:#050521; font-weight: 700; margin-top:0; margin-bottom:10px;}
+.hm-services-sec h2{font-size:35px; position:relative; color:#050521; font-weight: 700; margin-top:0; margin-bottom:10px;font-family: 'Merriweather', sans-serif;}
 .hm-services-sec h2 span{color: #004D84; font-weight:700;}
 .hm-services-sec h2:after {content: ''; display: block; width:80px; height:3px; background:#ca970b; left:0;margin: 4px auto 0;position:absolute; top:100%;}
 .hm-services-sec .icon-box{padding:30px 20px;position: relative; text-align:center; margin-bottom:30px;height:100%}
 .icon-box:before, .icon-box:after {content: ''; position: absolute; width: calc(100% - 35px); height: calc(100% - 35px); border: 1px solid #ccc; pointer-events: none;   transition: .33s all ease;}
 .icon-box:before {top: 0; left: 0; border-width: 1px 0 0 1px;}
 .icon-box:after {bottom: 0; right: 0; border-width: 0 1px 1px 0;}
-.icon-box .box-top, .icon-box .box-body {position: relative; will-change: transform; transition: .33s all ease;}
+.icon-box .box-top, .icon-box .box-body {position: relative; will-change: transform; transition: .33s all ease;font-family: 'Lato',sans-serif;}
 .icon-box .box-top {top: 0;}
 .icon-box .box-icon {display:block; margin-bottom:15px;}
-.icon-box h5{line-height: 1.11111;font-size: 16px; font-weight: 700;color: #000; margin:0 0 10px; position:relative;}
+.icon-box h5{line-height: 1.11111;font-size: 16px; font-weight: 700;color: #000; margin:0 0 10px; position:relative;font-family: 'Montserrat', sans-serif;}
 .icon-box h5 a{color: #004D84;}
 .text-gray-05 {color: rgba(0,0,0,.5); margin:0;}
 .height-fill{width:80%;margin:15px auto;height:100px}
@@ -61,7 +61,7 @@
     display: block;
     content: "";
     position: absolute;
-    left: 7px;
+    left: -4px;
     top: 50%;
     background-color: #fff;
     z-index: 1;
@@ -225,9 +225,10 @@
 }
 .banner-main2 .carousel-caption p {
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 30px;
     padding-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
 }
 .banner-main2 .carousel-caption a {
     font-size: 17px;
@@ -265,7 +266,8 @@
 }
 /* Services css start */
 .serviceTitle{
-    color: #004D84
+    color: #004D84;
+    font-family:'Montserrat', sans-serif;
 }
 .serviceCard{
     /* margin:20px auto; */
@@ -387,11 +389,13 @@ position: relative;
 .service-content-text{
     /* padding-top: .7rem; */
     font-size: 14px;
+    font-family: 'Montserrat' , sans-serif;
 }
 .service-content-text-links a{
     color: #6d6c6c;
     text-decoration: none;
     font-size: 14px;
+    font-family: 'Montserrat' , sans-serif;
 }
 .service-content-text-links a:hover{
     color: #000;
@@ -503,6 +507,81 @@ blockquote:before {
     background-color: #004D84;
 }
 /* About us end */
+/* Images start */
+.overlayImage-container:hover .overlayImage{
+    display:flex;
+}
+.overlayImage{
+    display:none;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    left: 0;right: 0;top: 0;bottom: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.overlayImage i{
+    font-size:50px;
+    color: #fff;
+    cursor: pointer;
+}
+.overlayImage-container{
+    position: relative;
+}
+.imageCarousel{
+    background-color: rgba(30, 30, 30, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display:none;
+}
+.imageCarousel-close{
+    position: absolute; right: 30px; top: 10px; z-index: 999999; font-size: 20px;cursor: pointer;
+}
+.imageCarousel-box{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.imageCarousel-inner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 0;
+}
+.imageCarousel-img{
+    background: transparent;
+    border: 0;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    width: auto;
+    outline: none;
+    transition: all 200ms ease;
+    opacity: 1;
+    margin: auto;
+    z-index: 9997;
+    box-shadow: none;
+}
+/* Images end */
 
 @keyframes scrollEffect{
     0% {

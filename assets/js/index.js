@@ -21,4 +21,13 @@ window.onclick = function (e) {
         $('html').css('overflow', 'auto');
     }
 }
+$(document).ready(function () {
+    $("#demo").carousel({ interval: false });
+});
 console.log("here")
+function displayCarousel() {
+    document.getElementsByClassName('imageCarousel')[0].style.display = "block";
+}
+function closeCarousel() {
+    document.getElementsByClassName('imageCarousel')[0].style.display = "none";
+}
