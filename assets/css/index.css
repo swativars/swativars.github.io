@@ -300,6 +300,9 @@
 .visionFont img{
     width:50px;
 }
+.visionBlockContent h5{
+    font-family:'Montserrat', sans-serif;
+}
 /* Services css start */
 .serviceTitle{
     color: #004D84;
@@ -548,6 +551,188 @@ blockquote:before {
     height: 80px;
     border-radius: 50%;
     background-color: #004D84;
+}
+.about-section {
+    padding: 50px 0 105px 0;
+}
+.about-section .flip-container {
+    height: 240px;
+    perspective: 1000px;
+}
+.about-section .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.about-section .front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transform: rotateY(
+0deg
+);
+}
+.about-section .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(
+180deg
+);
+}
+.about-info .info-box {
+    border: 2px solid #004d84;
+}
+.about-info .info-box {
+    margin-bottom: 0;
+}
+.about-info .info-box {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about-info .info-box {
+    position: relative;
+    min-height: 180px;
+    border: 2px solid #004d84;
+    border-radius: 4px;
+    padding: 15px 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.about-info .info-box .circle-icon {
+    background-color: #004d84;
+}
+.about-info .info-box .circle-icon {
+    width: 82px;
+    height: 82px;
+    border-radius: 60%;
+    margin: -60px auto 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #004d84;
+    display: block;
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 1.8;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.about-info .info-box .info-line {
+    border-top: 2px solid #004d84;
+}
+.about-info .info-box .info-line {
+    width: 55%;
+    border-top: 2px solid #004d84;
+    margin: 22px auto;
+}
+.about-info .info-box h3.heading-content {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #6e6e6e;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-info .info-box .content-about {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: none;
+    color: #ffffff;
+}
+.about-info .info-box .info-line {
+    border-top: 2px solid #004d84;
+}
+.about-info .info-box .info-line {
+    width: 55%;
+    border-top: 2px solid #004d84;
+    margin: 22px auto;
+}
+.about-info .info-box.info-content {
+    background-color: #004d84;
+}
+.about-info .info-box {
+    border: 2px solid #004d84;
+}
+.about-info .info-box.info-content .info-line {
+    border-top-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-info .info-box .info-line {
+    border-top: 2px solid #004d84;
+}
+.about-info .info-box .info-line {
+    width: 55%;
+    border-top: 2px solid #004d84;
+    margin: 22px auto;
+}
+.about-info .info-box .content-about {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: none;
+    color: #ffffff;
+}
+.about-info .info-box.info-content .info-line {
+    border-top-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-section .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.about-section .flip-container:hover .flipper {
+    transform: rotateY(
+180deg
+);
+}
+.about-info .info-box.info-content .content-about {
+    display: block;
+}
+.about-section .heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #444444;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.about-section .style-line {
+    background: linear-gradient(to right, rgba(51, 161, 222, 0.3), #1f86bf, rgba(51, 161, 222, 0));
+}
+.style-line {
+    width: 130px;
+    margin: 4px auto;
+    margin-bottom: -17px;
+    border: none;
+    height: 1px;
+    background: rgba(48, 199, 121, 0.23);
+    background: linear-gradient(to right, rgba(48, 199, 121, 0.23), #30c779, rgba(68, 68, 68, 0));
+}
+.about-section .icon-bg {
+    color: #33A1DE;
+    font-size: 22px;
+    background: #ffffff;
+}
+.icon-heading:before {
+    content: "\e908";
 }
 /* About us end */
 /* Images start */
