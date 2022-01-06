@@ -29,11 +29,11 @@
     <!-- Header Start -->
     <header>
         <!--Brand Start-->
-        <div class="logoContainer py-4">
+        <div class="logoContainer py-3 py-md-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="d-flex align-items-center">
+                        <div class="d-none d-md-flex align-items-center headerLeft">
                             <div class="brandLogo">
                                 <a href="index.html">
                                     <img src="assets/images/logo.png" alt="logo" />
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-end">
+                    <div class="col-md-6 d-flex headerRight">
                         <div class="d-flex flex-column align-items-center">
                             <!-- <div class="headerLinks">
                                 <a class="mb-0" href="mailto:caneerajvarshney@gmail.com"><i
@@ -87,12 +87,28 @@
         <!--Navbar Start-->
         <nav class="navbar navbar-expand-md navbar-dark navHeader">
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon text-light"></span>
+            <button class="navbar-toggler" type="button" data-trigger="#collapsibleNavbar">
+                <img src="assets/icons/Menu.svg" alt="">
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="navbar-collapse" id="collapsibleNavbar">
+                <div class="offcanvas-header mt-3 d-block d-md-none">
+                    <div class="clearfix">
+                        <img class="float-right btn-close" src="assets/icons/Close.svg">
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="brandLogo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="ml-1 brandLogoText">
+                            <p class="mb-0">Neeraj Varshney & Associates</p>
+                            <p class="mb-0">Chartered Accountants</p>
+                        </div>
+                    </div>
+                </div>
                 <ul class="navbar-nav w-100 justify-content-md-center">
                     <li class="nav-item navLI">
                         <a class="nav-link linkLight" href="index.html"><span class="nav-white">Home</span></a>
@@ -162,7 +178,7 @@
         <div class="row mt-3">
             <div class="col-md-6">
                 <div class="w-100">
-                    <img height="560"
+                    <img class="index-team-image"
                         src="http://avantage.bold-themes.com/marketing/wp-content/uploads/sites/4/2019/04/img-people.jpg"
                         class="attachment-large size-large w-100"
                         alt="http://avantage.bold-themes.com/marketing/wp-content/uploads/sites/4/2019/04/img-people.jpg"
@@ -188,7 +204,7 @@
                             that result from an understanding of the
                             science and reliability that only commitment
                             can bestow.</p>
-                        <p>
+                        <p class="about-us-text">
                             Today our world is being brought together
                             not simply by the mandate of nations, but by
                             the power of individuals who allow
@@ -296,12 +312,12 @@
                 <div class="hm-services-title">
                     <h2><span>Services</span><br />We're offering</span></h2>
                 </div>
-                <div>
-                    <a href="services.html" class="allButton btn">View all services</a>
+                <div class="serviceAll--btn">
+                    <a href="services.html" class="allButton">View all services</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="height-fill">
                         <div class="height-fill-side">
                             <i class="fas fa-balance-scale"></i>
@@ -322,7 +338,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="height-fill">
                         <div class="height-fill-side">
                             <i class="fas fa-file-invoice"></i>
@@ -340,7 +356,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="height-fill">
                         <div class="height-fill-side">
                             <i class="fas fa-money-check-alt"></i>
@@ -357,7 +373,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="height-fill">
                         <div class="height-fill-side">
                             <i class="fas fa-tasks"></i>
@@ -626,7 +642,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/common.js"></script>
+    <script src="/assets/js/common.js"></script>
 </body>
 
 </html>
