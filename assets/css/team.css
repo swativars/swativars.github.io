@@ -117,3 +117,19 @@ color:#fff;
   font-size: 85px;
   color: #004D84;
 }
+/*----------------------*/
+@media only screen and (min-width:1200px) and (max-width:1366px) {
+
+}
+@media only screen and (max-width:1199.98px){
+
+}
+@media only screen and (max-width:991.98px){
+
+
+}
+@media screen and (max-width:767.98px){
+  .team-banner{
+    height: 450px;
+  }
+}

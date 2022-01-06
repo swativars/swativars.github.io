@@ -85,6 +85,9 @@ body.modal-open{padding: 0px !important;}
     height: 450px;
     object-fit: cover;
 }
+.headerRight{
+    justify-content: end;
+}
 .navLI{
     padding:0 12px;
 }
@@ -249,4 +252,80 @@ body.modal-open{padding: 0px !important;}
     font-family: "Jost", sans-serif;
     margin: 0px;
 
+}
+/*----------------------*/
+@media only screen and (min-width:1200px) and (max-width:1366px) {
+
+}
+@media only screen and (max-width:1199.98px){
+
+}
+@media only screen and (max-width:991.98px){
+
+
+}
+@media screen and (max-width:767.98px){
+.headerLinks a , .headerLinks-mail a{
+    font-size:12px
+}
+.brandLogoText p:first-child{
+    font-size: 13px;
+}
+.brandLogoText p:last-child{
+    font-size: 10px;
+}
+.headerLeft{
+    justify-content: center;
+}
+.headerRight{
+    justify-content: center;
+}
+.offcanvas-header{ display:block;}
+    .offcanvas-active{position: relative;}
+    .offcanvas-active::before{
+     content: '';
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background-color:rgba(0, 0, 0, 0.8);
+     z-index: 999;
+    }
+    .navbar-collapse {
+      position: fixed;
+      top:0; 
+      bottom: 0;
+      right: 100%;
+      width: 80%;
+      padding-left: 4%;
+      padding-right: 5%;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: white;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+      z-index: 1;
+    }
+    .search-icon{
+        margin-left: 0;
+        padding-right: 0.75rem;
+    }
+    .cross-icon{
+        padding-right: 0.75rem;
+    }
+    .navbar-collapse.show {
+      visibility: visible;
+      transform: translateX(100%);
+      z-index: 1000;
+    }
+    .navbar-toggler{
+        border-color: transparent!important;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        color: #000!important;
+    }
+    .brandLogo{
+        width:60px;
+    }
 }

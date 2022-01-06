@@ -97,7 +97,7 @@
 .mid-text-box-inner .hm-text-box h3:after{border-left: 15px solid transparent; border-right:15px solid transparent;  border-top: 15px solid #d7be61; content:""; position:absolute; height:0; width:0; left:15px; top:100%;}
 .mid-text-box-inner .hm-text-box h3:before{background:none;}
 .hm-text-box p{margin-bottom:11px;}
-
+.index-team-image{height:560px;width: 100%;}
 .newsContainer{
     height:250px;
 }
@@ -110,17 +110,30 @@
     animation: scrollEffect 7s linear infinite;
 }
 .allButton{
-    transform: skew(-8deg);
+    /* transform: skew(-8deg);
     background-color: #004D84;
     color: #ffffff;
     box-shadow: 0 -2px 0 0 rgb(24 24 24 / 15%) inset;
     padding: 1.125em 1.875em;
-    border: 2px solid transparent!important;
+    border: 2px solid transparent!important; */
+    font-weight:400;
+    font-size:16px;
+    line-height:20px;
+    letter-spacing:0.25px;
+    padding-bottom: 5px;
+    margin-bottom:5px;
+    cursor: pointer;
+    border-bottom: 2px solid #666666;
+    color: #666666;
+    font-family: 'Montserrat' , sans-serif;
+}
+.serviceAll--btn{
+    margin-bottom:40px;
 }
 .allButton:hover{
-    background-color: #fff;
     color:#004d84;
-    border: 2px solid #004d84!important;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 .index-header{
     height:550px;
@@ -175,7 +188,6 @@
 }
 .superheadline{
     justify-content: flex-start;
-    font-size: 1.125rem;
     color: #ffffff;
     letter-spacing: 0;
     font-size: 1rem;
@@ -828,4 +840,64 @@ blockquote:before {
 #main_slider a.carousel-control-next, #main_slider a.carousel-control-prev {
     display: none;
 }
+}
+/*----------------------*/
+@media only screen and (min-width:1200px) and (max-width:1366px) {
+
+}
+@media only screen and (max-width:1199.98px){
+
+}
+@media only screen and (max-width:991.98px){
+
+
+}
+@media screen and (max-width:767.98px){
+    .index-banner{
+        height: 450px;
+      }
+      .index-banner-block{
+          padding:0 10px;
+      }
+    .aboutus-picture-container{
+        height: 328px;
+        width: 328px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutus-content{
+        padding: 15px;
+    }
+    .circle{
+        width:45px;
+        height: 45px;
+    }
+    .index-banner-title {
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .superheadline{
+        font-size: 12px;
+    }
+    .column-inner{
+        overflow-y: scroll;
+    }
+    .hm-services-sec h2 {
+        font-size: 20px;
+    }
+    .height-fill .height-fill-side {
+       left: 22px;
+       width: 60px;
+        height: 60px;
+    }
+    .hm-services-sec h2:after {
+        width: 54px;
+    }
+    .visionBlock{margin:10px 0;}
+    .height-fill .height-fill-side i{font-size:25px}
+    .allButton {font-size: 12px;line-height: 12px;padding-bottom: 3px;}
+    .index-team-image{height:400px}
+    .hm-services-title {margin-bottom: 20px;}
+    .about-us-text{font-size: 14px}
+    .about-us-text b{font-size:16px}
 }
